@@ -1,0 +1,18 @@
+.venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+
+.qa/
+
+# Pré-visualizações geradas pelos scripts de tools/.
+previews/
+
+# Configurações locais e credenciais.
+.env
+.env.*
+!.env.example
+*.log
+build/
+dist/
+pantheon-self-test.json

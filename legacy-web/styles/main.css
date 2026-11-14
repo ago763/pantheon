@@ -1,0 +1,159 @@
+* {
+  box-sizing:border-box
+}
+body {
+  margin:0;
+  background:#090d14;
+  color:#ebe4ce;
+  font-family:Georgia,serif;
+  overflow:hidden
+}
+canvas {
+  display:block;
+  width:100vw;
+  height:100vh;
+  image-rendering:pixelated
+}
+.overlay {
+  position:fixed;
+  inset:0;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  background:#050912ba;
+  padding:25px
+}
+.panel {
+  width:min(760px,100%);
+  text-align:center;
+  padding:42px;
+  border:1px solid #8d7950;
+  background:linear-gradient(145deg,#16212e,#0a0e17);
+  box-shadow:0 0 90px #000
+}
+small,.eyebrow {
+  color:#bda675;
+  font:12px Arial;
+  letter-spacing:4px;
+  text-transform:uppercase
+}
+h1 {
+  font-size:clamp(34px,6vw,66px);
+  font-weight:normal;
+  letter-spacing:4px;
+  margin:20px 0 8px
+}
+h2 {
+  font-weight:normal;
+  font-size:30px
+}
+p {
+  color:#b2becc;
+  line-height:1.7
+}
+button {
+  font:15px Georgia;
+  color:#efe4c9;
+  background:#283446;
+  border:1px solid #9b8453;
+  padding:16px 24px;
+  cursor:pointer
+}
+button:hover,button:focus-visible {
+  background:#41556a;
+  outline:2px solid #d8c18c;
+  outline-offset:3px
+}
+.primary {
+  background:#a58b57;
+  color:#10141c;
+  margin:20px 0 10px;
+  min-width:230px
+}
+.hud {
+  position:fixed;
+  top:25px;
+  left:30px;
+  right:30px;
+  pointer-events:none;
+  display:flex;
+  justify-content:space-between;
+  gap:20px;
+  font:14px Arial
+}
+.label {
+  color:#9caab9;
+  font-size:10px;
+  letter-spacing:2px;
+  margin-bottom:8px
+}
+.xp {
+  position:fixed;
+  top:0;
+  height:5px;
+  background:#80d9f9;
+  box-shadow:0 0 15px #74d1ff
+}
+.bottom {
+  position:fixed;
+  bottom:25px;
+  left:30px;
+  font:12px Arial;
+  color:#9babbc;
+  pointer-events:none
+}
+.slot {
+  display:inline-block;
+  padding:12px;
+  border:1px solid #586573;
+  background:#121c28;
+  margin:0 6px 12px 0;
+  color:#b5e8ff
+}
+.cards {
+  display:flex;
+  gap:12px
+}
+.cards button {
+  flex:1;
+  padding:24px 14px;
+  min-height:180px
+}
+.cards span {
+  display:block;
+  color:#b4c7d8;
+  font:13px/1.7 Arial;
+  margin-top:16px
+}
+[hidden] {
+  display:none!important
+}
+#pause {
+  position:fixed;
+  right:28px;
+  bottom:25px;
+  padding:10px 17px
+}
+footer {
+  font:11px Arial;
+  color:#778392;
+  margin-top:24px
+}
+@media(max-width:600px) {
+  .panel {
+    padding:24px
+  }
+  .cards {
+    flex-direction:column
+  }
+  .cards button {
+    min-height:70px
+  }
+  .hud {
+    left:15px;
+    right:15px
+  }
+  .bottom {
+    left:15px
+  }
+}

@@ -1,0 +1,1062 @@
+{
+  "elements": {
+    "ice": {
+      "name": "Gelo",
+      "color": "#70d6ff",
+      "dark": "#16394e",
+      "form": "Soberano do Zero Absoluto",
+      "bonus": {
+        "slow_aura": 130
+      },
+      "animation_fps": 6,
+      "trail": {
+        "max_count": 5,
+        "duration": 3,
+        "spacing": 38,
+        "width": 76,
+        "height": 36,
+        "effect_duration": 0.7
+      }
+    },
+    "dark": {
+      "name": "Escuridão",
+      "color": "#bb7bff",
+      "dark": "#302045",
+      "form": "Soberano do Abismo",
+      "bonus": {
+        "dodge": 0.15,
+        "cooldown_on_kill": 0.08
+      },
+      "animation_fps": 6
+    },
+    "light": {
+      "name": "Luz",
+      "color": "#ffe28b",
+      "dark": "#4a3d1e",
+      "form": "Arauto Seráfico",
+      "bonus": {
+        "damage": 0.15
+      },
+      "animation_fps": 6,
+      "trail": {
+        "max_count": 5,
+        "duration": 3,
+        "spacing": 38,
+        "width": 76,
+        "height": 34,
+        "max_length": 220,
+        "ribbon_width": 14
+      }
+    },
+    "lightning": {
+      "name": "Raio",
+      "color": "#5595ff",
+      "dark": "#172d59",
+      "form": "Soberano da Tempestade",
+      "bonus": {
+        "speed": 0.2,
+        "cooldown": 0.15
+      },
+      "animation_fps": 6,
+      "trail": {
+        "max_count": 5,
+        "duration": 0.85,
+        "spacing": 28,
+        "width": 48,
+        "height": 64
+      }
+    },
+    "fire": {
+      "name": "Fogo",
+      "color": "#ff8950",
+      "dark": "#52251c",
+      "form": "Soberano das Chamas",
+      "bonus": {
+        "damage": 0.2,
+        "death_explosion": 55
+      },
+      "animation_fps": 6,
+      "trail": {
+        "max_count": 5,
+        "duration": 3,
+        "spacing": 38,
+        "width": 76,
+        "height": 36,
+        "effect_duration": 1.2
+      }
+    }
+  },
+  "characters": {
+    "ice_witch": {
+      "name": "Ice Witch",
+      "element": "ice",
+      "starting_spell": "hyorinmaru",
+      "buff_spell": "hyorinmaru",
+      "damage_bonus": 0.25,
+      "cooldown_bonus": 0,
+      "hp": 100,
+      "speed": 180,
+      "portrait_index": 0,
+      "head_offset": [
+        0,
+        -76
+      ],
+      "back_offset": [
+        0,
+        -32
+      ],
+      "feet_offset": [
+        0,
+        0
+      ]
+    },
+    "shadow_monarch": {
+      "name": "Shadow Monarch",
+      "element": "dark",
+      "starting_spell": "shadow_spikes",
+      "buff_spell": "shadow_spikes",
+      "damage_bonus": 0.3,
+      "cooldown_bonus": 0,
+      "hp": 100,
+      "speed": 190,
+      "portrait_index": 1,
+      "head_offset": [
+        0,
+        -68
+      ],
+      "back_offset": [
+        0,
+        -32
+      ],
+      "feet_offset": [
+        0,
+        0
+      ]
+    },
+    "light_elf": {
+      "name": "Light Elf",
+      "element": "light",
+      "starting_spell": "judgement",
+      "buff_spell": "judgement",
+      "damage_bonus": 0.2,
+      "cooldown_bonus": 0.1,
+      "hp": 95,
+      "speed": 185,
+      "portrait_index": 2,
+      "head_offset": [
+        0,
+        -68
+      ],
+      "back_offset": [
+        0,
+        -32
+      ],
+      "feet_offset": [
+        0,
+        0
+      ]
+    },
+    "flame_pirate": {
+      "name": "Flame Pirate",
+      "element": "fire",
+      "starting_spell": "hiken",
+      "buff_spell": "hiken",
+      "damage_bonus": 0.3,
+      "cooldown_bonus": 0,
+      "hp": 120,
+      "speed": 175,
+      "portrait_index": 3,
+      "head_offset": [
+        0,
+        -68
+      ],
+      "back_offset": [
+        0,
+        -32
+      ],
+      "feet_offset": [
+        0,
+        0
+      ]
+    },
+    "lightning_assassin": {
+      "name": "Lightning Assassin",
+      "element": "lightning",
+      "starting_spell": "static_needles",
+      "buff_spell": "static_needles",
+      "damage_bonus": 0,
+      "cooldown_bonus": 0.25,
+      "hp": 90,
+      "speed": 210,
+      "portrait_index": 4,
+      "head_offset": [
+        0,
+        -70
+      ],
+      "back_offset": [
+        0,
+        -32
+      ],
+      "feet_offset": [
+        0,
+        0
+      ]
+    }
+  },
+  "maps": {
+    "tundra": {
+      "name": "Crystal Tundra",
+      "description": "Gelo rachado e cristais ancestrais.",
+      "rect": [
+        57,
+        51,
+        365,
+        370
+      ]
+    },
+    "citadel": {
+      "name": "Goetia Citadel",
+      "description": "Ruínas escuras e runas do abismo.",
+      "rect": [
+        535,
+        52,
+        338,
+        380
+      ]
+    },
+    "caldera": {
+      "name": "Ashen Caldera",
+      "description": "Pedra vulcânica e rios de lava.",
+      "rect": [
+        986,
+        52,
+        365,
+        380
+      ]
+    }
+  },
+  "spells": {
+    "hyorinmaru": {
+      "name": "Hyorinmaru",
+      "element": "ice",
+      "mechanic": "projectile",
+      "description": "Dragão perfurante que aplica lentidão.",
+      "damage": 23,
+      "cooldown": 0.85,
+      "range": 600,
+      "projectile_speed": 450,
+      "radius": 24,
+      "duration": 1.5,
+      "projectiles": 1,
+      "tick_interval": 0.35,
+      "slow": 1,
+      "burn": 0,
+      "damage_per_level": 0.25,
+      "range_per_level": 0.08,
+      "cooldown_per_level": 0.06,
+      "evolution_multiplier": 1.9,
+      "passive": "scarf",
+      "evolution": "Daiguren Hyorinmaru",
+      "animation_fps": 10
+    },
+    "ice_age": {
+      "name": "Ice Age",
+      "element": "ice",
+      "mechanic": "pulse",
+      "description": "Onda circular que congela inimigos próximos.",
+      "damage": 20,
+      "cooldown": 2.8,
+      "range": 150,
+      "projectile_speed": 0,
+      "radius": 150,
+      "duration": 0.7,
+      "projectiles": 1,
+      "tick_interval": 0.35,
+      "slow": 1,
+      "burn": 0,
+      "damage_per_level": 0.25,
+      "range_per_level": 0.08,
+      "cooldown_per_level": 0.06,
+      "evolution_multiplier": 1.9,
+      "passive": "mask",
+      "evolution": "Zero Absoluto",
+      "animation_fps": 10,
+      "ring_thickness": 0.45
+    },
+    "demons_extract": {
+      "name": "Demon’s Extract",
+      "element": "ice",
+      "mechanic": "ice_rain",
+      "description": "Marca o chão e faz estacas de gelo caírem do céu. Dano em área no impacto.",
+      "damage": 15,
+      "cooldown": 2.2,
+      "range": 450,
+      "projectile_speed": 240,
+      "radius": 80,
+      "duration": 1.65,
+      "projectiles": 1,
+      "tick_interval": 0.35,
+      "slow": 1,
+      "burn": 0,
+      "damage_per_level": 0.25,
+      "range_per_level": 0.08,
+      "cooldown_per_level": 0.06,
+      "evolution_multiplier": 1.9,
+      "passive": "chalice",
+      "evolution": "Mahapadma",
+      "animation_fps": 10,
+      "warning": 0.55,
+      "fall_duration": 0.75,
+      "impact_duration": 0.35,
+      "fall_height": 220
+    },
+    "black_hole": {
+      "name": "Black Hole",
+      "element": "dark",
+      "mechanic": "vortex",
+      "description": "Vórtice que atrai e causa dano contínuo.",
+      "damage": 12,
+      "cooldown": 3.5,
+      "range": 420,
+      "projectile_speed": 0,
+      "radius": 85,
+      "duration": 2.8,
+      "projectiles": 1,
+      "tick_interval": 0.35,
+      "slow": 0,
+      "burn": 0,
+      "damage_per_level": 0.25,
+      "range_per_level": 0.08,
+      "cooldown_per_level": 0.06,
+      "evolution_multiplier": 1.9,
+      "passive": "rings",
+      "evolution": "Kurouzu",
+      "animation_fps": 10
+    },
+    "yami_matoi": {
+      "name": "Yami Matoi",
+      "element": "dark",
+      "mechanic": "slash",
+      "description": "Corte na direção do alvo: nasce pequeno, cresce e se dissipa no fim.",
+      "damage": 28,
+      "cooldown": 1.3,
+      "range": 540,
+      "projectile_speed": 360,
+      "radius": 40,
+      "duration": 1.5,
+      "projectiles": 1,
+      "tick_interval": 0.35,
+      "slow": 0,
+      "burn": 0,
+      "damage_per_level": 0.25,
+      "range_per_level": 0.08,
+      "cooldown_per_level": 0.06,
+      "evolution_multiplier": 1.9,
+      "passive": "black_grimoire",
+      "evolution": "Jigen Giri",
+      "animation_fps": 10,
+      "visual_size": [
+        150,
+        95
+      ]
+    },
+    "shadow_spikes": {
+      "name": "Shadow Spikes",
+      "element": "dark",
+      "mechanic": "spikes",
+      "description": "Espinhos sob o alvo que o prendem.",
+      "damage": 36,
+      "cooldown": 2.2,
+      "range": 460,
+      "projectile_speed": 0,
+      "radius": 65,
+      "duration": 0.8,
+      "projectiles": 1,
+      "tick_interval": 0.35,
+      "slow": 0,
+      "burn": 0,
+      "damage_per_level": 0.25,
+      "range_per_level": 0.08,
+      "cooldown_per_level": 0.06,
+      "evolution_multiplier": 1.9,
+      "passive": "dagger",
+      "evolution": "Exército das Sombras",
+      "animation_fps": 10
+    },
+    "judgement": {
+      "name": "Arrows of Judgement",
+      "element": "light",
+      "mechanic": "homing",
+      "description": "Conjunto lançado em linha reta na direção do alvo; três estágios visuais.",
+      "damage": 17,
+      "cooldown": 0.7,
+      "range": 650,
+      "projectile_speed": 300,
+      "radius": 12,
+      "duration": 1.5,
+      "projectiles": 1,
+      "tick_interval": 0.35,
+      "slow": 0,
+      "burn": 0,
+      "damage_per_level": 0.25,
+      "range_per_level": 0.08,
+      "cooldown_per_level": 0.06,
+      "evolution_multiplier": 1.9,
+      "passive": "light_grimoire",
+      "evolution": "Julgamento Divino",
+      "animation_fps": 10,
+      "single_group": true,
+      "visual_size": [
+        116,
+        64
+      ]
+    },
+    "light_whip": {
+      "name": "Light Whip",
+      "element": "light",
+      "mechanic": "whip",
+      "description": "Combo de quatro golpes luminosos em sequência, com um acerto por inimigo por golpe.",
+      "damage": 28,
+      "cooldown": 1.6,
+      "range": 135,
+      "projectile_speed": 0,
+      "radius": 135,
+      "duration": 1.12,
+      "projectiles": 1,
+      "tick_interval": 0.35,
+      "slow": 0,
+      "burn": 0,
+      "damage_per_level": 0.25,
+      "range_per_level": 0.08,
+      "cooldown_per_level": 0.06,
+      "evolution_multiplier": 1.9,
+      "passive": "stone",
+      "evolution": "Chicote Seráfico",
+      "animation_fps": 10
+    },
+    "punishment": {
+      "name": "Ray of Punishment",
+      "element": "light",
+      "mechanic": "beam",
+      "description": "Feixe celestial sobre o inimigo mais resistente.",
+      "damage": 45,
+      "cooldown": 2.6,
+      "range": 600,
+      "projectile_speed": 0,
+      "radius": 48,
+      "duration": 1.2,
+      "projectiles": 1,
+      "tick_interval": 0.35,
+      "slow": 0,
+      "burn": 0,
+      "damage_per_level": 0.25,
+      "range_per_level": 0.08,
+      "cooldown_per_level": 0.06,
+      "evolution_multiplier": 1.9,
+      "passive": "crown",
+      "evolution": "Punição Celestial",
+      "animation_fps": 10,
+      "beams_by_level": [
+        1,
+        1,
+        2,
+        2,
+        3
+      ],
+      "visual_scale": 1.4
+    },
+    "storm_orbs": {
+      "name": "Orbital Storm Orbs",
+      "element": "lightning",
+      "mechanic": "orbit",
+      "description": "Esferas elétricas orbitais que defendem o jogador.",
+      "damage": 16,
+      "cooldown": 0.9,
+      "range": 95,
+      "projectile_speed": 280,
+      "radius": 20,
+      "duration": 2,
+      "projectiles": 1,
+      "tick_interval": 0.35,
+      "slow": 0,
+      "burn": 0,
+      "damage_per_level": 0.25,
+      "range_per_level": 0.08,
+      "cooldown_per_level": 0.06,
+      "evolution_multiplier": 1.9,
+      "passive": "coin",
+      "evolution": "Anel de Railgun",
+      "animation_fps": 10,
+      "base_orbs": 3,
+      "orbs_per_level": 1,
+      "orbit_speed": 120,
+      "orbit_vertical_scale": 0.55,
+      "orbit_center_y": 12
+    },
+    "static_needles": {
+      "name": "Static Needles",
+      "element": "lightning",
+      "mechanic": "homing",
+      "description": "Conjunto lançado em linha reta na direção do alvo; três estágios visuais.",
+      "damage": 11,
+      "cooldown": 0.35,
+      "range": 520,
+      "projectile_speed": 300,
+      "radius": 10,
+      "duration": 1,
+      "projectiles": 1,
+      "tick_interval": 0.35,
+      "slow": 0,
+      "burn": 0,
+      "damage_per_level": 0.25,
+      "range_per_level": 0.08,
+      "cooldown_per_level": 0.06,
+      "evolution_multiplier": 1.9,
+      "passive": "yoyo",
+      "evolution": "Godspeed",
+      "animation_fps": 10,
+      "single_group": true,
+      "visual_size": [
+        116,
+        64
+      ]
+    },
+    "magnetic_field": {
+      "name": "Magnetic Field",
+      "element": "lightning",
+      "mechanic": "field",
+      "description": "Campo elétrico que causa dano e paralisa.",
+      "damage": 13,
+      "cooldown": 3,
+      "range": 480,
+      "projectile_speed": 0,
+      "radius": 100,
+      "duration": 2.5,
+      "projectiles": 1,
+      "tick_interval": 0.35,
+      "slow": 0,
+      "burn": 0,
+      "damage_per_level": 0.25,
+      "range_per_level": 0.08,
+      "cooldown_per_level": 0.06,
+      "evolution_multiplier": 1.9,
+      "passive": "drums",
+      "evolution": "Raigo",
+      "animation_fps": 10
+    },
+    "hiken": {
+      "name": "Hiken",
+      "element": "fire",
+      "mechanic": "fireball",
+      "description": "Punho de fogo que explode ao atingir um inimigo.",
+      "damage": 38,
+      "cooldown": 1.4,
+      "range": 580,
+      "projectile_speed": 330,
+      "radius": 55,
+      "duration": 1.8,
+      "projectiles": 1,
+      "tick_interval": 0.35,
+      "slow": 0,
+      "burn": 2,
+      "damage_per_level": 0.25,
+      "range_per_level": 0.08,
+      "cooldown_per_level": 0.06,
+      "evolution_multiplier": 1.9,
+      "passive": "hat",
+      "evolution": "Entei",
+      "animation_fps": 10,
+      "visual_size": [
+        92,
+        58
+      ]
+    },
+    "dragon_roar": {
+      "name": "Dragon Roar",
+      "element": "fire",
+      "mechanic": "cone",
+      "description": "Sopro de fogo em cone que aplica queimadura.",
+      "damage": 14,
+      "cooldown": 1.8,
+      "range": 200,
+      "projectile_speed": 0,
+      "radius": 80,
+      "duration": 1.1,
+      "projectiles": 1,
+      "tick_interval": 0.35,
+      "slow": 0,
+      "burn": 2,
+      "damage_per_level": 0.25,
+      "range_per_level": 0.08,
+      "cooldown_per_level": 0.06,
+      "evolution_multiplier": 1.9,
+      "passive": "dragon_scarf",
+      "evolution": "Chamas do Rei Dragão",
+      "animation_fps": 10
+    },
+    "black_flame": {
+      "name": "Black Flame",
+      "element": "fire",
+      "mechanic": "flame",
+      "description": "Chamas negras persistentes sob os inimigos.",
+      "damage": 10,
+      "cooldown": 3.4,
+      "range": 450,
+      "projectile_speed": 0,
+      "radius": 85,
+      "duration": 3.5,
+      "projectiles": 1,
+      "tick_interval": 0.35,
+      "slow": 0,
+      "burn": 2,
+      "damage_per_level": 0.25,
+      "range_per_level": 0.08,
+      "cooldown_per_level": 0.06,
+      "evolution_multiplier": 1.9,
+      "passive": "magatama",
+      "evolution": "Amaterasu Eterno",
+      "animation_fps": 10
+    }
+  },
+  "passives": {
+    "scarf": {
+      "name": "Cachecol Turquesa",
+      "element": "ice",
+      "stat": "damage",
+      "value_per_level": 0.1,
+      "max_level": 5,
+      "icon_column": 0,
+      "icon_row": 0
+    },
+    "mask": {
+      "name": "Máscara de Dormir",
+      "element": "ice",
+      "stat": "area",
+      "value_per_level": 0.12,
+      "max_level": 5,
+      "icon_column": 1,
+      "icon_row": 0
+    },
+    "chalice": {
+      "name": "Cálice Demoníaco",
+      "element": "ice",
+      "stat": "cooldown",
+      "value_per_level": 0.08,
+      "max_level": 5,
+      "icon_column": 2,
+      "icon_row": 0
+    },
+    "rings": {
+      "name": "Anéis de Ouro",
+      "element": "dark",
+      "stat": "magnet",
+      "value_per_level": 0.2,
+      "max_level": 5,
+      "icon_column": 0,
+      "icon_row": 1
+    },
+    "black_grimoire": {
+      "name": "Grimório Negro",
+      "element": "dark",
+      "stat": "projectile_speed",
+      "value_per_level": 0.12,
+      "max_level": 5,
+      "icon_column": 1,
+      "icon_row": 1
+    },
+    "dagger": {
+      "name": "Presa de Kasaka",
+      "element": "dark",
+      "stat": "critical",
+      "value_per_level": 0.06,
+      "max_level": 5,
+      "icon_column": 2,
+      "icon_row": 1
+    },
+    "light_grimoire": {
+      "name": "Grimório de 4 Trevos",
+      "element": "light",
+      "stat": "projectiles",
+      "value_per_level": 1,
+      "max_level": 5,
+      "icon_column": 0,
+      "icon_row": 2
+    },
+    "stone": {
+      "name": "Pedra Carmesim",
+      "element": "light",
+      "stat": "duration",
+      "value_per_level": 0.15,
+      "max_level": 5,
+      "icon_column": 1,
+      "icon_row": 2
+    },
+    "crown": {
+      "name": "Coroa de Elfo",
+      "element": "light",
+      "stat": "xp",
+      "value_per_level": 0.12,
+      "max_level": 5,
+      "icon_column": 2,
+      "icon_row": 2
+    },
+    "coin": {
+      "name": "Moeda de Fliperama",
+      "element": "lightning",
+      "stat": "armor",
+      "value_per_level": 0.08,
+      "max_level": 5,
+      "icon_column": 0,
+      "icon_row": 3
+    },
+    "yoyo": {
+      "name": "Ioiô de Liga Metálica",
+      "element": "lightning",
+      "stat": "speed",
+      "value_per_level": 0.08,
+      "max_level": 5,
+      "icon_column": 1,
+      "icon_row": 3
+    },
+    "drums": {
+      "name": "Tambores Tomoe",
+      "element": "lightning",
+      "stat": "area",
+      "value_per_level": 0.12,
+      "max_level": 5,
+      "icon_column": 2,
+      "icon_row": 3
+    },
+    "hat": {
+      "name": "Chapéu Laranja",
+      "element": "fire",
+      "stat": "damage",
+      "value_per_level": 0.1,
+      "max_level": 5,
+      "icon_column": 0,
+      "icon_row": 4
+    },
+    "dragon_scarf": {
+      "name": "Cachecol de Dragão",
+      "element": "fire",
+      "stat": "regen",
+      "value_per_level": 0.5,
+      "max_level": 5,
+      "icon_column": 1,
+      "icon_row": 4
+    },
+    "magatama": {
+      "name": "Colar Magatama",
+      "element": "fire",
+      "stat": "duration",
+      "value_per_level": 0.15,
+      "max_level": 5,
+      "icon_column": 2,
+      "icon_row": 4
+    }
+  },
+  "boss_attacks": {
+    "beel_slash": {
+      "name": "Corte elétrico",
+      "boss": 0,
+      "mechanic": "shot",
+      "damage": 18,
+      "cooldown": 4,
+      "warning": 0,
+      "duration": 3,
+      "range": 600,
+      "speed": 220,
+      "radius": 45,
+      "count": 1,
+      "visual_size": 120
+    },
+    "beel_grid": {
+      "name": "Grade elétrica",
+      "boss": 0,
+      "mechanic": "grid",
+      "damage": 18,
+      "cooldown": 5.5,
+      "warning": 1.4,
+      "duration": 1.1,
+      "range": 500,
+      "speed": 0,
+      "radius": 105,
+      "count": 1,
+      "area_scale": 1.5
+    },
+    "beel_swarm": {
+      "name": "Enxame elétrico",
+      "boss": 0,
+      "mechanic": "homing",
+      "damage": 12,
+      "cooldown": 7,
+      "warning": 0.4,
+      "duration": 5,
+      "range": 700,
+      "speed": 120,
+      "radius": 13,
+      "count": 5
+    },
+    "bar_tornado": {
+      "name": "Tornados",
+      "boss": 1,
+      "mechanic": "tornado",
+      "damage": 16,
+      "cooldown": 6,
+      "warning": 0.6,
+      "duration": 5,
+      "range": 650,
+      "speed": 75,
+      "radius": 38,
+      "count": 3
+    },
+    "bar_spiral": {
+      "name": "Espiral de lâminas",
+      "boss": 1,
+      "mechanic": "radial",
+      "damage": 12,
+      "cooldown": 5,
+      "warning": 0.5,
+      "duration": 4,
+      "range": 800,
+      "speed": 145,
+      "radius": 16,
+      "count": 12
+    },
+    "bar_sound": {
+      "name": "Ondas da lira",
+      "boss": 1,
+      "mechanic": "shot",
+      "damage": 14,
+      "cooldown": 4,
+      "warning": 0.4,
+      "duration": 4,
+      "range": 750,
+      "speed": 180,
+      "radius": 28,
+      "count": 3
+    },
+    "mor_meteor": {
+      "name": "Meteoro",
+      "boss": 2,
+      "mechanic": "meteor",
+      "damage": 26,
+      "cooldown": 6,
+      "warning": 1.3,
+      "duration": 1.15,
+      "range": 600,
+      "speed": 0,
+      "radius": 80,
+      "count": 1,
+      "fall_duration": 0.65,
+      "fall_height": 240,
+      "fall_travel": 160,
+      "visual_size": 110
+    },
+    "mor_wall": {
+      "name": "Muralha de obsidiana",
+      "boss": 2,
+      "mechanic": "wall",
+      "damage": 10,
+      "cooldown": 8,
+      "warning": 1.2,
+      "duration": 4,
+      "range": 500,
+      "speed": 0,
+      "radius": 38,
+      "count": 5
+    },
+    "mor_spears": {
+      "name": "Lanças douradas",
+      "boss": 2,
+      "mechanic": "shot",
+      "damage": 18,
+      "cooldown": 5,
+      "warning": 0.6,
+      "duration": 4,
+      "range": 800,
+      "speed": 210,
+      "radius": 17,
+      "count": 5
+    },
+    "buer_roots": {
+      "name": "Raízes malditas",
+      "boss": 3,
+      "mechanic": "roots",
+      "damage": 12,
+      "cooldown": 6,
+      "warning": 1,
+      "duration": 2.5,
+      "range": 550,
+      "speed": 0,
+      "radius": 70,
+      "count": 1
+    },
+    "buer_spores": {
+      "name": "Anel de esporos",
+      "boss": 3,
+      "mechanic": "ring",
+      "damage": 16,
+      "cooldown": 5,
+      "warning": 0.8,
+      "duration": 2.8,
+      "range": 600,
+      "speed": 0,
+      "radius": 230,
+      "count": 1
+    },
+    "buer_laser": {
+      "name": "Laser do olho",
+      "boss": 3,
+      "mechanic": "beam",
+      "damage": 24,
+      "cooldown": 7,
+      "warning": 1.5,
+      "duration": 1.2,
+      "range": 700,
+      "speed": 0,
+      "radius": 24,
+      "count": 1
+    },
+    "hab_embers": {
+      "name": "Chuva de brasas",
+      "boss": 4,
+      "mechanic": "rain",
+      "damage": 18,
+      "cooldown": 6,
+      "warning": 1.2,
+      "duration": 1.15,
+      "range": 600,
+      "speed": 0,
+      "radius": 48,
+      "count": 5,
+      "fall_duration": 0.65,
+      "fall_height": 240,
+      "fall_travel": 160,
+      "visual_size": 90
+    },
+    "hab_lava": {
+      "name": "Fissuras de lava",
+      "boss": 4,
+      "mechanic": "lava",
+      "damage": 15,
+      "cooldown": 7,
+      "warning": 1,
+      "duration": 3.5,
+      "range": 550,
+      "speed": 0,
+      "radius": 43,
+      "count": 6
+    },
+    "hab_fireballs": {
+      "name": "Rajada tripla",
+      "boss": 4,
+      "mechanic": "shot",
+      "damage": 20,
+      "cooldown": 4,
+      "warning": 0.5,
+      "duration": 4,
+      "range": 800,
+      "speed": 200,
+      "radius": 23,
+      "count": 3
+    },
+    "foc_mirror": {
+      "name": "Espelhos de água",
+      "boss": 5,
+      "mechanic": "mirror",
+      "damage": 12,
+      "cooldown": 8,
+      "warning": 0.8,
+      "duration": 6,
+      "range": 600,
+      "speed": 230,
+      "radius": 70,
+      "count": 4,
+      "shot_interval": 0.55,
+      "projectile_radius": 12
+    },
+    "foc_jet": {
+      "name": "Jato de alta pressão",
+      "boss": 5,
+      "mechanic": "beam",
+      "damage": 22,
+      "cooldown": 6,
+      "warning": 1.2,
+      "duration": 1.4,
+      "range": 750,
+      "speed": 0,
+      "radius": 30,
+      "count": 1
+    },
+    "foc_bubbles": {
+      "name": "Bolhas abissais",
+      "boss": 5,
+      "mechanic": "homing",
+      "damage": 12,
+      "cooldown": 5,
+      "warning": 0.6,
+      "duration": 6,
+      "range": 750,
+      "speed": 85,
+      "radius": 18,
+      "count": 8
+    }
+  },
+  "enemies": {
+    "moth": {
+      "hp": 30,
+      "hp_per_second": 0.16,
+      "speed": 65,
+      "speed_per_second": 0.17,
+      "radius": 12,
+      "contact_damage": 10,
+      "attack_cooldown": 6,
+      "attack_damage": 8,
+      "attack_speed": 100
+    },
+    "tank": {
+      "hp": 95,
+      "hp_per_second": 0,
+      "speed": 38,
+      "speed_per_second": 0,
+      "radius": 20,
+      "contact_damage": 20
+    },
+    "eye": {
+      "hp": 40,
+      "hp_per_second": 0.1,
+      "speed": 48,
+      "speed_per_second": 0.1,
+      "radius": 14,
+      "contact_damage": 10,
+      "attack_cooldown": 3,
+      "attack_damage": 12,
+      "attack_speed": 145
+    },
+    "bomb": {
+      "hp": 25,
+      "hp_per_second": 0.1,
+      "speed": 85,
+      "speed_per_second": 0.1,
+      "radius": 14,
+      "contact_damage": 0,
+      "attack_damage": 25,
+      "attack_radius": 85,
+      "warning": 1.1
+    }
+  },
+  "boss_settings": {
+    "first_spawn": 20,
+    "spawn_interval": 25,
+    "base_hp": 320,
+    "hp_per_boss": 100,
+    "speed": 32,
+    "radius": 40,
+    "contact_damage": 22
+  },
+  "progression": {
+    "choices_per_level": 4,
+    "same_element_weight": 2
+  }
+}

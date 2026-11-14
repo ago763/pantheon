@@ -1,0 +1,93 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Goetia Survivors</title>
+<link rel="stylesheet" href="styles/main.css">
+</head>
+<body>
+<canvas id="game" aria-label="Arena de sobrevivência Goetia Survivors">
+</canvas>
+<div id="hud" class="hud" hidden>
+<div>
+<div class="label">CRYSTAL TUNDRA</div>
+<b id="level">NÍVEL 1</b>
+</div>
+<div style="text-align:center">
+<div class="label">TEMPO DE SOBREVIVÊNCIA</div>
+<b id="timer">00:00</b>
+</div>
+<div style="text-align:right">
+<div class="label">ALMAS DERROTADAS</div>
+<b id="kills">0</b>
+</div>
+</div>
+<div id="xp" class="xp">
+</div>
+<div id="inventory" class="bottom" hidden>
+<div>
+<span class="slot" id="weapon">❄ Hyorinmaru · 1</span>
+<span class="slot">—</span>
+<span class="slot">—</span>
+<span class="slot">—</span>
+</div>WASD / SETAS · MOVER &nbsp; ESC · PAUSAR &nbsp; ATAQUE AUTOMÁTICO</div>
+<button id="pause" hidden>Pausar ⏸</button>
+<div id="menu" class="overlay">
+<section class="panel">
+<div class="eyebrow">Um pacto com o inverno</div>
+<h1>GOETIA<br>SURVIVORS</h1>
+<p>O frio desperta. A horda se aproxima.<br>Domine o gelo e sobreviva à Crystal Tundra.</p>
+<h2>❄ Ice Witch</h2>
+<p>Hyorinmaru · Dragões de gelo perfurantes<br>Sobreviva por 3 minutos nesta primeira expedição.</p>
+<button id="start" class="primary">INICIAR EXPEDIÇÃO</button>
+<footer>PROTÓTIPO · ETAPA 2 &nbsp; / &nbsp; WASD ou setas para mover</footer>
+</section>
+</div>
+<div id="choices" class="overlay" hidden>
+<section class="panel">
+<small>O poder desperta</small>
+<h2>Escolha uma melhoria</h2>
+<p>A expedição está pausada. Escolha uma carta para continuar.</p>
+<div id="cards" class="cards">
+</div>
+</section>
+</div>
+<div id="paused" class="overlay" hidden>
+<section class="panel">
+<small>Um instante de silêncio</small>
+<h2>Expedição pausada</h2>
+<button id="resume" class="primary">CONTINUAR</button>
+</section>
+</div>
+<div id="end" class="overlay" hidden>
+<section class="panel">
+<small id="endLabel">
+</small>
+<h2 id="endTitle">
+</h2>
+<p id="result">
+</p>
+<button id="restart" class="primary">NOVA EXPEDIÇÃO</button>
+</section>
+</div>
+<script src="src/config.js" defer>
+</script>
+<script src="src/core.js" defer>
+</script>
+<script src="src/session.js" defer>
+</script>
+<script src="src/input.js" defer>
+</script>
+<script src="src/progression.js" defer>
+</script>
+<script src="src/results.js" defer>
+</script>
+<script src="src/simulation.js" defer>
+</script>
+<script src="src/renderer.js" defer>
+</script>
+<script src="src/main.js" defer>
+</script>
+</body>
+</html>
