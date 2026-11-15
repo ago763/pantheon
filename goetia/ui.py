@@ -110,7 +110,7 @@ class UI:
             image = self.assets.menu_background((art_width, int(h*.76)))
             surface.blit(image, (0, h*.1))
             self.text(surface, "ESCOLHA SEU DESTINO", (int(w*.81), int(h*.19)), 20, config.GOLD, True)
-            for i, (name, action) in enumerate((("JOGAR", "select"), ("PERSONAGENS", "select"), ("GRIMÓRIO", "book"), ("OPÇÕES", "options"), ("SAIR", "quit"))):
+            for i, (name, action) in enumerate((("JOGAR", "select"), ("GRIMÓRIO", "book"), ("OPÇÕES", "options"), ("SAIR", "quit"))):
                 self.button(surface, name, pygame.Rect(int(w*.65), int(h*.29)+i*62, int(w*.31), 48), action, i == 0)
             self.text(surface, "Um pacto com o inverno. Uma guerra contra a Goetia.", (w//2, h-27), 17, config.GOLD, True)
         elif self.page == "select":

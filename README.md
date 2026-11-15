@@ -79,7 +79,7 @@ Os testes usam o modo de vídeo de teste do Pygame, sem abrir uma janela visíve
 
 ## Estado atual
 
-- Menu inicial com Jogar, Personagens, Grimório, Opções e Sair.
+- Menu inicial com Jogar, Grimório, Opções e Sair.
 - Seleção dos cinco personagens e três mapas. Cada personagem inicia com sua magia e bônus exclusivo.
 - Quinze magias funcionais e quinze passivas. Limite de quatro magias e quatro passivas por partida.
 - Quatro cartas por nível, com moldura em relevo, pixel art das referências, cor por elemento, atributos, estrelas e item de evolução. Cartas do elemento do personagem recebem peso 2× no sorteio.

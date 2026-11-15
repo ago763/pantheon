@@ -75,7 +75,7 @@ class MenuTheme:
         if page=='book':
             self.book(canvas,buttons)
         elif page=='home':
-            for i, action in enumerate(('select','select','book','options','quit')):
+            for i, action in enumerate(('select','book','options','quit')):
                 buttons.append((pygame.Rect(1180,262+i*98,410,82),action))
         else:
             for i,(key,char) in enumerate(CHARACTERS.items()):

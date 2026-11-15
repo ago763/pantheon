@@ -16,3 +16,5 @@ A interação e o grimório são desenhados em goetia/menu_theme.py. Coordenadas
 Aplicado na janela do Pygame, no executável via Pantheon.spec e no atalho da Área de Trabalho.
 
 Prompt: Use case: logo-brand. Create a square Windows desktop game icon for Pantheon, a dark fantasy elemental survival game. A single large sculpted gold letter P merged with a radiant circular arcane solar sigil, on a near-black obsidian rounded square medallion. Premium gothic fantasy game aesthetic, antique gold beveled metal, restrained golden glow, bold clean silhouette readable at 32 pixels, centered and filling 85 percent of the canvas. Minimal ornament, high contrast. No words, no additional letters, no scenery, no mockup, no watermark. Square composition.
+
+Menu inicial atualizado via image_gen: remover PERSONAGENS; manter JOGAR e mover GRIMÓRIO, OPÇÕES e SAIR uma posição acima, preservando título, cenário, estilo e espaçamento. Arquivo: home-pantheon.png.
