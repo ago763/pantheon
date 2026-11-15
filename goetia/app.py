@@ -1,6 +1,7 @@
 """Janela, eventos e loop principal do Pygame."""
 
 import pygame
+from pathlib import Path
 from pygame import Vector2
 
 from . import config
@@ -13,6 +14,8 @@ class Game:
     def __init__(self):
         pygame.display.init()
         pygame.font.init()
+        icon_path = Path(__file__).resolve().parent.parent / 'assets/images/ui/pantheon-icon.png'
+        pygame.display.set_icon(pygame.image.load(str(icon_path)))
         self.screen = pygame.display.set_mode(config.WINDOW_SIZE, pygame.RESIZABLE)
         pygame.display.set_caption(config.TITLE)
         self.clock = pygame.time.Clock()

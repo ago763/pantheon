@@ -18,4 +18,5 @@ exe = EXE(
     pyz, a.scripts, a.binaries, a.datas, [],
     name='Pantheon', debug=False, strip=False, upx=False,
     console=False, disable_windowed_traceback=False,
+    icon=str(root / 'assets/images/ui/pantheon.ico'),
 )
