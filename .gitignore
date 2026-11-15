@@ -17,3 +17,4 @@ build/
 dist/*
 !dist/Pantheon.exe
 pantheon-self-test.json
+jogo.docx

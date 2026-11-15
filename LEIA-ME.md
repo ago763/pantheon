@@ -40,7 +40,6 @@ Para depurar, abra **Executar e Depurar**, selecione **Jogar Pantheon** e pressi
 - `tests/test_game.py`: verificações automatizadas das regras e telas.
 - `requirements.txt`: versão do Pygame usada pelo projeto.
 - `.vscode/`: configuração para executar e depurar no VS Code.
-- `jogo.docx`: documento original de referência.
 - `legacy-web/`: protótipo anterior em HTML, CSS e JavaScript; não é necessário para rodar Python.
 
 World cuida das regras; Renderer e UI desenham o resultado; Game conecta tudo ao teclado, mouse e janela. Isso permite mudar o visual sem misturar o desenho com as regras de combate.
