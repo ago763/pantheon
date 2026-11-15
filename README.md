@@ -109,6 +109,8 @@ Menu e seleção usam as artes em `assets/images/ui`. Clique em cada personagem 
 
 ## Executável Windows
 
+Baixe [Pantheon.exe](https://github.com/ago763/pantheon/raw/refs/heads/main/dist/Pantheon.exe) e abra com dois cliques. Como o repositório é privado, entre na sua conta do GitHub para baixar.
+
 Abra `dist/Pantheon.exe` com dois cliques. O arquivo inclui Python, Pygame, dados e artes; não precisa instalar Python para jogar.
 
 Para gerar novamente após alterar o projeto:

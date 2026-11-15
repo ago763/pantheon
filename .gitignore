@@ -14,5 +14,6 @@ previews/
 !.env.example
 *.log
 build/
-dist/
+dist/*
+!dist/Pantheon.exe
 pantheon-self-test.json
